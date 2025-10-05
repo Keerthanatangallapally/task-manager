@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Progress Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>Task Manager – Progress Tracker</h1>
+  </header>
+
+  <!-- Progress section -->
+  <section id="progressSection">
+    <h2>Progress</h2>
+    <!-- visual bar will be styled later -->
+    <div id="progressBar">
+      <div id="progressFill">0%</div>
+    </div>
+    <p id="progressText">0 of 0 tasks completed</p>
+  </section>
+
+  <!-- Add-task form -->
+  <section id="taskFormSection">
+    <h2>Add a New Task</h2>
+    <form id="taskForm">
+      <label>
+        Task Title:
+        <input type="text" id="taskTitle" required>
+      </label>
+      <br><br>
+      <label>
+        Description:
+        <textarea id="taskDesc"></textarea>
+      </label>
+      <br><br>
+      <label>
+        Due Date:
+        <input type="date" id="taskDate">
+      </label>
+      <br><br>
+      <label>
+        Priority:
+        <select id="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <br><br>
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+
+  <!-- Filters and Search -->
+  <section id="controls">
+    <h2>Filters</h2>
+    <button data-filter="all">All</button>
+    <button data-filter="active">Active</button>
+    <button data-filter="completed">Completed</button>
+    <input type="text" id="searchBox" placeholder="Search tasks">
+  </section>
+
+  <!-- Task list container -->
+  <section id="taskListSection">
+    <h2>Tasks</h2>
+    <ul id="taskList">
+      <!-- tasks will appear here dynamically -->
+    </ul>
+  </section>
+</body>
+</html>

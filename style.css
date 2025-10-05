@@ -1,0 +1,104 @@
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    section, header {
+      background: whitesmoke;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* --------- Progress bar --------- */
+    #progressBar {
+      width: 100%;
+      background-color: lavenderblush;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      margin: 10px 0;
+    }
+
+    #progressFill {
+      height: 100%;
+      width: 0%;        /* will grow with JS */
+      background-color: #4caf50;
+      color: black;
+      text-align: center;
+      line-height: 20px;
+      font-size: 0.9em;
+      transition: width 0.3s ease;
+    }
+
+    /* --------- Form --------- */
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: black;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 8px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Filter buttons */
+    #controls button {
+      margin-right: 8px;
+      background-color: #2196f3;
+    }
+
+    #controls button:hover {
+      background-color: #1976d2;
+    }
+
+    /* --------- Task list --------- */
+    #taskList {
+      list-style: none;  /* remove bullets */
+      padding: 0;
+    }
+
+    #taskList li {
+      background: #f9f9f9;
+      margin-bottom: 10px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    /* --------- Responsive tweak --------- */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+    }
